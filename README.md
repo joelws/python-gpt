@@ -19,7 +19,7 @@ export OPENAI_API_KEY=<your key>
 from python_gpt.chat import Chat
 
 chat = Chat("Can you please define what an AI Large Language Model is?")
-# response will print either in terminal if using pythong there, script, or jupyter notebook
+# response will print either in terminal if using python there, script stdout, or jupyter notebook
 
 # to continue the conversation
 chat.ask("Further questions")
