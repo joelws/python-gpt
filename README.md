@@ -28,7 +28,8 @@ Example output using python in terminal:
 ```
 >>> from python_gpt.chat import Chat
 >>> chat = Chat("Can you please define what an AI Large Language Model is?")
-                                                                                                                                               Response: An AI Large Language Model (LLM) is a type of artificial intelligence system that uses a deep learning technique called transformer architecture to generate human-like text based on the input it receives. It is trained on vast amounts of text data to understand patterns, grammar, and context in order to generate coherent and contextually relevant responses.
+
+Response: An AI Large Language Model (LLM) is a type of artificial intelligence system that uses a deep learning technique called transformer architecture to generate human-like text based on the input it receives. It is trained on vast amounts of text data to understand patterns, grammar, and context in order to generate coherent and contextually relevant responses.
 
 LLMs are designed to understand and generate natural language, and they can be used for a variety of tasks such as language translation, text completion, question-answering, summarization, and even creative writing. They are capable of generating long-form text by predicting the most probable next word or sequence of words given the context.
 
