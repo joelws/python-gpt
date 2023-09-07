@@ -1,6 +1,7 @@
 '''Loader class for loading animations'''
 from itertools import cycle
 from threading import Thread
+from shutil import get_terminal_size
 from time import sleep
 
 
@@ -39,7 +40,8 @@ class Loader:
 
     def stop(self):
         self.done = True
-        print(flush=True)
+        cols = get_terminal_size((80, 20)).columns
+        print("\r" + " " * cols, end="", flush=True)
 
     def __exit__(self, exc_type, exc_value, tb):
         # handle exceptions with those variables ^
