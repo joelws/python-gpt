@@ -1,4 +1,4 @@
-# Pytho-GPT
+# Python-GPT
 - A simple chat gpt tool using the openai library to persist conversions in a [Chat](./python_gpt/chat.py) class
 
 ## Install
