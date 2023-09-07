@@ -52,3 +52,17 @@ class Chat:
             print_cost : bool = False,
         ) -> None:
 ```
+
+## Tracking Cost
+- Cost is tracked by default and can be printed after each questions by passing `print_cost=True` to the Chat class
+- Cost can be accessed by calling `chat.cost` after each question
+- Cost assumed is the GPT-3.5-turbo model at 0.00003 per token, so if you're using a different model, you can pass the cost per token to the Chat class
+```
+>>> chat = Chat("What is the purpose of a large language model?", print_cost=True)
+                                                                                                                    Response: The purpose of a large language model is to generate human-like text by understanding and predicting patterns in language. These models are trained on vast amounts of text data and can be used for a variety of tasks such as text completion, language translation, sentiment analysis, question answering, and more. They aim to assist users in generating coherent and contextually relevant text, thereby enhancing various natural language processing applications and providing a more interactive and engaging user experience.
+Cost: $0.00315
+```
+
+## Chat History and Tokens
+- Chat history can be viewed by calling `chat.chat_log`
+- Total token use for the chat can be viewed by calling `chat.total_tokens`
